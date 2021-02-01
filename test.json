@@ -1,0 +1,87 @@
+{
+  "bonus_chest": false,
+  "dimensions": {
+    "minecraft:overworld": {
+      "type": {
+			"logical_height": 512,
+			"infiniburn": "minecraft:infiniburn_overworld",
+			"effects": "minecraft:overworld",
+			"ambient_light": 0.0,
+			"respawn_anchor_works": false,
+			"has_raids": true,
+			"min_y": 0,
+			"height": 512,
+			"natural": true,
+			"coordinate_scale": 1.0,
+			"piglin_safe": false,
+			"bed_works": true,
+			"has_skylight": true,
+			"has_ceiling": true,
+			"ultrawarm": false
+			},
+      "generator": {
+        "settings": {
+          "lakes": false,
+          "features": false,
+          "biome": "minecraft:plains",
+          "structures": {
+            "stronghold": {
+              "distance": 32,
+              "spread": 3,
+              "count": 128
+            },
+            "structures": {
+              "minecraft:village": {
+                "spacing": 32,
+                "separation": 8,
+                "salt": 10387312
+              }
+            }
+          },
+          "layers": [
+            {
+              "height": 1,
+              "block": "minecraft:bedrock"
+            },
+            {
+              "height": 510,
+              "block": "minecraft:dirt"
+            },
+            {
+              "height": 1,
+              "block": "minecraft:grass_block"
+            }
+          ]
+        },
+        "type": "minecraft:flat"
+      }
+    },
+    "minecraft:the_nether": {
+      "type": "minecraft:the_nether",
+      "generator": {
+        "biome_source": {
+          "preset": "minecraft:nether",
+          "seed": 0,
+          "type": "minecraft:multi_noise"
+        },
+        "seed": 0,
+        "settings": "minecraft:nether",
+        "type": "minecraft:noise"
+      }
+    },
+    "minecraft:the_end": {
+      "type": "minecraft:the_end",
+      "generator": {
+        "biome_source": {
+          "seed": 0,
+          "type": "minecraft:the_end"
+        },
+        "seed": 0,
+        "settings": "minecraft:end",
+        "type": "minecraft:noise"
+      }
+    }
+  },
+  "seed": 0,
+  "generate_features": true
+}
